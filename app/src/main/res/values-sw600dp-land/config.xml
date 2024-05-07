@@ -28,9 +28,9 @@
     <dimen name="config_more_keys_keyboard_key_height">81.9dp</dimen>
 
     <fraction name="config_keyboard_top_padding">2.727%p</fraction>
-    <fraction name="config_keyboard_bottom_padding">0.0%p</fraction>
-    <fraction name="config_keyboard_left_padding">0.450%p</fraction>
-    <fraction name="config_keyboard_right_padding">0.450%p</fraction>
+    <fraction name="config_keyboard_bottom_padding">5.0%p</fraction>
+    <fraction name="config_keyboard_left_padding">25.0%p</fraction>
+    <fraction name="config_keyboard_right_padding">25.0%p</fraction>
     <fraction name="config_key_vertical_gap">4.5%p</fraction>
     <fraction name="config_key_horizontal_gap">0.9%p</fraction>
 
