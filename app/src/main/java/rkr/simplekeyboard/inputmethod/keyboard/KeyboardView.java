@@ -405,7 +405,7 @@ public class KeyboardView extends View {
 
         // Draw hint label.
         final String hintLabel = key.getHintLabel();
-        if (hintLabel != null) {
+        if (false && hintLabel != null) {
             paint.setTextSize(key.selectHintTextSize(params));
             paint.setColor(key.selectHintTextColor(params));
             // TODO: Should add a way to specify type face for hint letters
