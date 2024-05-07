@@ -262,6 +262,9 @@ public class KeyboardView extends View {
         if (Color.alpha(mCustomColor) > 0 && keyboard.getKey(Constants.CODE_SPACE) != null) {
             setBackgroundColor(mCustomColor);
         }
+
+        setBackgroundColor(0x000000FF); // Make keyboard transparent
+
         // Calculate clip region and set.
         final boolean drawAllKeys = mInvalidateAllKeys || mInvalidatedKeys.isEmpty();
         final boolean isHardwareAccelerated = canvas.isHardwareAccelerated();
