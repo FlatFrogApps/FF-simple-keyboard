@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--
+<!--A
 /*
 **
 ** Copyright 2012, The Android Open Source Project
@@ -22,24 +22,24 @@
     <color name="ic_launcher_background">#ECEFF1</color>
 
     <!-- Color resources for LXX_Light theme. -->
-    <color name="background_lxx_light">#ECEFF1</color>
+    <color name="background_lxx_light">#EE343539</color>
     <color name="key_text_color_lxx_light">#FFFFFF</color>
     <color name="key_functional_text_color_lxx_light">#CC939393</color>
     <color name="key_text_inactive_color_lxx_light">#B3FFFFFF</color>
-    <color name="key_hint_letter_color_lxx_light">#B37F868E</color>
-    <color name="language_on_spacebar_text_color_lxx_light">#B3289DD8</color>
-    <color name="sliding_key_input_preview_color_lxx_light">#B3FFC700</color>
-    <color name="key_background_normal_lxx_light">#222222</color>
-    <color name="key_background_pressed_lxx_light">#756F6F</color>
+    <color name="key_hint_letter_color_lxx_light">#FFFFFF</color>
+    <color name="language_on_spacebar_text_color_lxx_light">#B3FFFFFF</color>
+    <color name="sliding_key_input_preview_color_lxx_light">#B3FFFFFF</color>
+    <color name="key_background_normal_lxx_light">#62636C</color>
+    <color name="key_background_pressed_lxx_light">#B9BBC6</color>
     <!-- Color resources for LXX_Dark theme. -->
-    <color name="background_lxx_dark">#263238</color>
+    <color name="background_lxx_dark">#EE252629</color>
     <color name="key_text_color_lxx_dark">#CCFFFFFF</color>
     <color name="key_functional_text_color_lxx_dark">#CCFFFFFF</color>
     <color name="key_text_inactive_color_lxx_dark">#80FFFFFF</color>
     <color name="key_hint_letter_color_lxx_dark">#80FFFFFF</color>
-    <color name="sliding_key_input_preview_color_lxx_dark">#B380CBC4</color>
-    <color name="key_background_normal_lxx_dark">#AA00FF00</color>
-    <color name="key_background_pressed_lxx_dark">#AA0000FF</color>
+    <color name="sliding_key_input_preview_color_lxx_dark">#B3FFFFFF</color>
+    <color name="key_background_normal_lxx_dark">#4A4B51</color>
+    <color name="key_background_pressed_lxx_dark">#94959E</color>
     <!-- Dimensions for all themes. -->
-    <dimen name="button_corner_radius_lxx">20dp</dimen>
+    <dimen name="button_corner_radius_lxx">5dp</dimen>
  </resources>
