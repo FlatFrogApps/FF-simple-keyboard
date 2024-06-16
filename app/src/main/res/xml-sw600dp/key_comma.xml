@@ -27,14 +27,14 @@
         >
             <Key
                 latin:keySpec="/"
-                latin:keyStyle="settingsMoreKeysStyle" />
+                />
         </case>
         <case
             latin:mode="email"
         >
             <Key
                 latin:keySpec="\@"
-                latin:keyStyle="settingsMoreKeysStyle" />
+                />
         </case>
         <case
             latin:keyboardLayoutSet="dvorak"
@@ -42,7 +42,7 @@
             <Key
                 latin:keySpec="!"
                 latin:moreKeys="!text/morekeys_exclamation,%"
-                latin:keyStyle="settingsMoreKeysStyle" />
+                />
         </case>
         <default>
             <Key
@@ -50,7 +50,7 @@
                 latin:moreKeys="!text/morekeys_tablet_comma,%"
                 latin:keyHintLabel="!text/keyhintlabel_tablet_comma"
                 latin:keyLabelFlags="hasPopupHint"
-                latin:keyStyle="settingsMoreKeysStyle" />
+                />
         </default>
     </switch>
 </merge>
