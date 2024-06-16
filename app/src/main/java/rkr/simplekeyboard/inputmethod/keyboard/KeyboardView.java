@@ -260,7 +260,7 @@ public class KeyboardView extends View {
         final Paint paint = mPaint;
         final Drawable background = getBackground();
         // Set custom bounds for keyboard background (This needs to be set according to the keyboard margins specified in app/src/main/res/values-sw600dp-land/config.xml)
-        if (background != null && getWidth() > 1000) { // Hacky way of making halving of background only apply to main keyboard background
+        if (background != null && getParent().toString().contains("main_keyboard_frame")) { // Hacky way of making halving of background only apply to main keyboard background
             float widthMargin = 0.0f;
             // Save the current state of the canvas
             int width = getWidth();
