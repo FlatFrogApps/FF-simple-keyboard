@@ -26,6 +26,7 @@ import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Paint.Align;
 import android.graphics.Typeface;
+import android.graphics.drawable.Drawable;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -508,6 +509,12 @@ public final class MainKeyboardView extends KeyboardView implements MoreKeysPane
     public boolean onTouchEvent(final MotionEvent event) {
         if (getKeyboard() == null) {
             return false;
+        }
+        final Drawable background = getBackground();
+        if (background != null && !isShowingMoreKeysPanel()) {
+            if (event.getX() < background.getBounds().left || event.getX() > background.getBounds().right) {
+                return false;
+            }
         }
         if (mNonDistinctMultitouchHelper != null) {
             if (event.getPointerCount() > 1 && mTimerHandler.isInKeyRepeat()) {
