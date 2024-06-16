@@ -259,11 +259,18 @@ public class KeyboardView extends View {
 
         final Paint paint = mPaint;
         final Drawable background = getBackground();
-        if (Color.alpha(mCustomColor) > 0 && keyboard.getKey(Constants.CODE_SPACE) != null) {
-            setBackgroundColor(mCustomColor);
+        // Set custom bounds for keyboard background (This needs to be set according to the keyboard margins specified in app/src/main/res/values-sw600dp-land/config.xml)
+        if (background != null) {
+            float widthMargin = 0.0f;
+            // Save the current state of the canvas
+            int width = getWidth();
+            int height = getHeight();
+            int left = width / 4 - (int) (width * widthMargin);
+            int top = 0;
+            int right = left + width / 2 + (int) (width * 2 * widthMargin);
+            int bottom = height;
+            background.setBounds(left, top, right, bottom);
         }
-
-        setBackgroundColor(0x000000FF); // Make keyboard transparent
 
         // Calculate clip region and set.
         final boolean drawAllKeys = mInvalidateAllKeys || mInvalidatedKeys.isEmpty();
